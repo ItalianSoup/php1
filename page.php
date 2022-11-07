@@ -25,7 +25,7 @@
             </div>
         </div>
         <div id="footer">
-            
+            <div id="photo"></div>
         </div>
     </body>
 </html>

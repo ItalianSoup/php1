@@ -142,3 +142,17 @@ form input[type="submit"]:hover{
 /*        border-left: border-left: white 20px solid;*/
 /*    }*/
 /*}*/
+
+#photo-login{
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    transform: translate(-50%,-50%);
+    background-image: url(media/pobrane.png);
+    background-position: center;
+    width: 10vw;
+    height: 5vh;
+    object-fit:cover;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}

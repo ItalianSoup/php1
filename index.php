@@ -14,6 +14,7 @@
         <META charset="utf-8">
     </head>
     <body>
+        <div id="photo-login"></div>
         <div class="container">
             <h1>Logowanie</h1>
             <form action="login.php" method="post">

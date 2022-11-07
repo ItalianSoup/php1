@@ -90,3 +90,16 @@ h1 span{
     width: 100%;
     background-color: black;
 }
+
+#photo{
+    background-image: url(media/pobrane.png);
+    background-position: center;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    z-index: 1;
+    width: 10vw;
+    height: 5vh;
+    object-fit:cover;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
