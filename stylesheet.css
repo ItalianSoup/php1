@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+    background-color: #262626;
+    color: #fff;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    left: 50%;
+    top: 50%;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    background-color: #3a3a3a;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(63deg, #3a3a3a 0%, #3a3a3a 25%, #3a3a3a 50%, #3a3a3a 75%, #3a3a3a 100%) padding-box,
+    linear-gradient(63deg, rgba(67,63,251,1) 0%, rgba(142,34,56,1) 25%, rgba(203,184,11,1) 50%, rgba(21,236,31,1) 75%, rgba(0,104,255,1) 100%) border-box;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+    box-shadow:80px 80px 40px -95px #15ec1f,
+               -100px -100px 40px -100px #8e2238,
+               -100px 100px 40px -105px blueviolet,
+                100px -100px 40px -110px #433ffb;
+
+}
+
+.container h1{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt{
+    position: relative;
+    border-bottom: 2px solid #575353;
+    margin: 30px 0;
+}
+.txt input{
+    color: white;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt label{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.txt span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /*background: #15ec1f;*/
+}
+
+.txt input:focus~label,
+.txt input:valid ~label
+{
+    top: -5px;
+    color: #575353;
+}
+
+.txt input:focus~span::before,
+.txt input:valid ~span::before
+{
+    animation: colorfade 10s ease-in-out infinite;
+}
+
+form input[type="submit"]{
+    width: auto;
+    height: 7%;
+    font-size: 20px;
+    font-family: "Source Code Pro";
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    background: transparent ;
+    border-left:white 2px solid;
+    transition: 0.5s;
+}
+form input[type="submit"]:hover{
+    border-left:white 20px solid;
+    letter-spacing: 5px;
+}
+
+#button{
+    padding-top: 5%;
+}
+
+@keyframes colorfade {
+    0%{
+        background: #15ec1f;
+    }
+    25%{
+        background: #683ffb;
+    }
+    50%{
+        background: #b32643;
+    }
+    75%{
+        background: yellow;
+    }
+    100%{
+        background: #15ec1f;
+    }
+}
+
+/*@keyframes login {*/
+/*    0%{*/
+/*        border-left: none;*/
+/*    }*/
+/*    50%{*/
+/*        border-left: border-left: white 20px solid;*/
+/*    }*/
+/*}*/
