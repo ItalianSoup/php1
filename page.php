@@ -12,16 +12,18 @@
         <META charset="utf-8">
         <title>Controll panel</title>
         <link rel="stylesheet" href="stylesheet2.css">
+        <link rel="stylesheet" href="buttons.css">
     </head>
     <body>
         <div class="nav">
             <div class="option"><?php echo $_SESSION['user']; ?></div>
-            <div class="option"><a href="logout.php" style="color: #686868">Logout</a> </div>
+            <div class="option" id="logout"><a href="logout.php">Logout</a> </div>
 
         </div>
         <div class="hibg">
             <div class="panel-box">
-
+                <div class="buttons"> <button id="buttton1" class="btn">Click me!</button></div><div class="buttons"> <button class="btn">Click me!</button></div>
+                <div class="buttons"> <button class="btn">Click me!</button></div> <div class="buttons"> <button class="btn">Click me!</button></div>
             </div>
         </div>
         <div id="footer">

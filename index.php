@@ -16,7 +16,7 @@
     <body>
         <div id="photo-login"></div>
         <div class="container">
-            <h1>Logowanie</h1>
+            <h1>Login</h1>
             <form action="login.php" method="post">
                 <div class="txt">
                     <input type="text" name="login" required>
